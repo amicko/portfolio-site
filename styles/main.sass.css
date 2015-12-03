@@ -1,0 +1,46 @@
+main nav {
+  background-color: grey; }
+  main nav section {
+    display: hidden;
+    height: 5em;
+    padding-top: 1px; }
+    main nav section img {
+      display: block;
+      height: 9em;
+      width: 9em;
+      float: left;
+      margin: 1em;
+      position: relative;
+      top: 1em; }
+    main nav section #title {
+      display: block;
+      text-align: center;
+      font-size: 4em;
+      margin: 0.8em auto;
+      color: white; }
+  main nav ul {
+    list-style-type: none;
+    margin: 0 25%;
+    clear: both; }
+    main nav ul li {
+      text-decoration: none;
+      display: inline-block;
+      padding: 0.5em;
+      font-size: 1.5em;
+      margin: 0 1em; }
+      main nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3em; }
+
+main #main, main #game, main #tumblr, main #chatroom {
+  background-color: black;
+  height: 32em;
+  color: white;
+  margin-top: -1.3em; }
+  main #main span, main #game span, main #tumblr span, main #chatroom span {
+    display: block;
+    position: relative;
+    top: 2em;
+    left: 42%;
+    font-size: 6em; }
