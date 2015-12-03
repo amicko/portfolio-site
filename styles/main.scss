@@ -1,59 +1,76 @@
 main {
-	// height: 100em;
-	// background-color: black;
-
+	margin: -1em 0 0 0;
 	nav {
-		background-color: grey;
-		// display: hidden;
+		height: 3em;
+		background-color: lightgrey;
 
-		section {
-			display: hidden;
-			height: 5em;
-			padding-top: 1px;
-
-			img {
-				display: block;
-				height: 9em;
-				width: 9em;
-				float: left;
-				margin: 1em;
-				position: relative;
-				top: 1em;
-			}
-
-			#title {
-				display: block;
-				text-align: center;
-				font-size: 4em;
-				margin: 0.8em auto;
-				color: white;
-			}
+		.hamburger {
+			display: block;
+			position: relative;
+			top: 1em;
+			left: 1em;
+			float: left;
+			height: 3em;
+			width: 3em;
+			background-color: green;
 		}
+
+		.topNav {
+			display: none;
+		}
+	}
+
+	.dropBox {
+		display: none;
+		margin-top: -1em;
+		position: absolute;
+		width: 50%;
 
 		ul {
 			list-style-type: none;
-			margin: 0 25%;
-			clear: both;
+			background-color: orange;
+			padding: 0;
 
 			li {
+				display: block;
 				text-decoration: none;
-				display: inline-block;
-				padding: 0.4em;
-				font-size: 1.5em;
-				// margin: 0 0.5em;
+				padding: 0.7em;
+				border: 1px solid blue;
 
 				a {
+					display: block;
 					color: white;
 					text-decoration: none;
 					font-size: 1.3em;
+					text-align: center;
 				}
 			}
 		}
 	}
 
+	#banner {
+		padding-top: 1px;
+		background-color: grey;
+
+		img {
+			display: block;
+			height: 9em;
+			width: 9em;
+			margin: 2em auto;
+		}
+
+		#title {
+			display: block;
+			text-align: center;
+			font-size: 3em;
+			color: white;
+			padding-bottom: 1em;
+		}
+	}
+
 	#main, #game, #tumblr, #chatroom {
 		background-color: black;
-		height: 32em;
+		min-height: 32em;
 		color: white;
 		margin-top: -1.3em;
 
@@ -64,9 +81,32 @@ main {
 			left: 42%;
 			font-size: 6em;
 		}
+	}
+}
 
-		p {
+@media screen and (min-width: 650px) {
+	main {
+		nav {
+			.hamburger {
+				display: none;
+			}
 
+			.topNav {
+				display: block;
+				list-style-type: none;
+				padding: 0.8em;
+
+				li {
+					display: inline-block;
+					margin: 0 1em;
+
+					a {
+						text-decoration: none;
+						color: grey;
+						font-size: 1.2em;
+					}
+				}
+			}
 		}
 	}
 }
