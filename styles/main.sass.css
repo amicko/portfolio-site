@@ -1,46 +1,76 @@
-main nav {
-  background-color: grey; }
-  main nav section {
-    display: hidden;
-    height: 5em;
-    padding-top: 1px; }
-    main nav section img {
+main {
+  margin: -1em 0 0 0; }
+  main nav {
+    height: 3em;
+    background-color: lightgrey; }
+    main nav .hamburger {
+      display: block;
+      position: relative;
+      top: 1em;
+      left: 1em;
+      float: left;
+      height: 3em;
+      width: 3em;
+      background-color: green; }
+    main nav .topNav {
+      display: none; }
+  main .dropBox {
+    display: none;
+    margin-top: -1em;
+    position: absolute;
+    width: 50%; }
+    main .dropBox ul {
+      list-style-type: none;
+      background-color: orange;
+      padding: 0; }
+      main .dropBox ul li {
+        display: block;
+        text-decoration: none;
+        padding: 0.7em;
+        border: 1px solid blue; }
+        main .dropBox ul li a {
+          display: block;
+          color: white;
+          text-decoration: none;
+          font-size: 1.3em;
+          text-align: center; }
+  main #banner {
+    padding-top: 1px;
+    background-color: grey; }
+    main #banner img {
       display: block;
       height: 9em;
       width: 9em;
-      float: left;
-      margin: 1em;
-      position: relative;
-      top: 1em; }
-    main nav section #title {
+      margin: 2em auto; }
+    main #banner #title {
       display: block;
       text-align: center;
-      font-size: 4em;
-      margin: 0.8em auto;
-      color: white; }
-  main nav ul {
-    list-style-type: none;
-    margin: 0 25%;
-    clear: both; }
-    main nav ul li {
-      text-decoration: none;
-      display: inline-block;
-      padding: 0.4em;
-      font-size: 1.5em;
-      margin: 0 0.5em; }
-      main nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.3em; }
+      font-size: 3em;
+      color: white;
+      padding-bottom: 1em; }
+  main #main, main #game, main #tumblr, main #chatroom {
+    background-color: black;
+    min-height: 32em;
+    color: white;
+    margin-top: -1.3em; }
+    main #main span, main #game span, main #tumblr span, main #chatroom span {
+      display: block;
+      position: relative;
+      top: 2em;
+      left: 42%;
+      font-size: 6em; }
 
-main #main, main #game, main #tumblr, main #chatroom {
-  background-color: black;
-  height: 32em;
-  color: white;
-  margin-top: -1.3em; }
-  main #main span, main #game span, main #tumblr span, main #chatroom span {
+@media screen and (min-width: 650px) {
+  main nav .hamburger {
+    display: none; }
+  main nav .topNav {
     display: block;
-    position: relative;
-    top: 2em;
-    left: 42%;
-    font-size: 6em; }
+    list-style-type: none;
+    padding: 0.8em; }
+    main nav .topNav li {
+      display: inline-block;
+      margin: 0 1em; }
+      main nav .topNav li a {
+        text-decoration: none;
+        color: grey;
+        font-size: 1.2em; } }
