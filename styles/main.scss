@@ -2,7 +2,7 @@ main {
 	margin: -1em 0 0 0;
 	nav {
 		height: 3em;
-		background-color: lightgrey;
+		background-color: #A7BFCB;
 
 		.hamburger {
 			display: block;
@@ -10,9 +10,9 @@ main {
 			top: 1em;
 			left: 1em;
 			float: left;
-			height: 3em;
-			width: 3em;
-			background-color: green;
+			height: 2em;
+			width: 2em;
+			background-color: #839C89;
 		}
 
 		.topNav {
@@ -28,21 +28,26 @@ main {
 
 		ul {
 			list-style-type: none;
-			background-color: orange;
+			background-color: #E1EACB;
 			padding: 0;
 
 			li {
 				display: block;
 				text-decoration: none;
 				padding: 0.7em;
-				border: 1px solid blue;
+				border: 1px solid #A7BFCB;
 
 				a {
 					display: block;
-					color: white;
+					color: #717E6C;
 					text-decoration: none;
 					font-size: 1.3em;
 					text-align: center;
+				}
+
+				a:hover {
+					color: black;
+					font-weight: bold;
 				}
 			}
 		}
@@ -50,7 +55,9 @@ main {
 
 	#banner {
 		padding-top: 1px;
-		background-color: grey;
+		background-color: #A19E91;
+		border-left: 1em solid #A7BFCB;
+		border-right: 1em solid #A7BFCB;
 
 		img {
 			display: block;
@@ -63,16 +70,19 @@ main {
 			display: block;
 			text-align: center;
 			font-size: 3em;
-			color: white;
+			color: black;
 			padding-bottom: 1em;
 		}
 	}
 
 	#main, #game, #tumblr, #chatroom {
-		background-color: black;
+		padding: 0 5px;
+		background-color: #A19E91;
 		min-height: 32em;
-		color: white;
+		color: black;
 		margin-top: -1.3em;
+		border-left: 1em solid #A7BFCB;
+		border-right: 1em solid #A7BFCB;
 
 		span {
 			display: block;
@@ -80,6 +90,24 @@ main {
 			top: 2em;
 			left: 42%;
 			font-size: 6em;
+		}
+
+		.siteTag {
+			display: inline-block;
+			width: 25%;
+			margin-left: 15%;
+			text-align: center;
+			border-radius: 15px;
+			font-size: 1.25em;
+			background-color: #BAC6C8;
+			text-decoration: none;
+			color: black;
+			padding: 5px;
+		}
+
+		.siteTag:hover {
+			background-color: silver;
+			font-weight: bold;
 		}
 	}
 }
@@ -102,8 +130,13 @@ main {
 
 					a {
 						text-decoration: none;
-						color: grey;
+						color: white;
 						font-size: 1.2em;
+					}
+
+					a:hover {
+						color: black;
+						font-weight: bold;
 					}
 				}
 			}

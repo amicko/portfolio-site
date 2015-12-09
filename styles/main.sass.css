@@ -2,16 +2,16 @@ main {
   margin: -1em 0 0 0; }
   main nav {
     height: 3em;
-    background-color: lightgrey; }
+    background-color: #A7BFCB; }
     main nav .hamburger {
       display: block;
       position: relative;
       top: 1em;
       left: 1em;
       float: left;
-      height: 3em;
-      width: 3em;
-      background-color: green; }
+      height: 2em;
+      width: 2em;
+      background-color: #839C89; }
     main nav .topNav {
       display: none; }
   main .dropBox {
@@ -21,22 +21,27 @@ main {
     width: 50%; }
     main .dropBox ul {
       list-style-type: none;
-      background-color: orange;
+      background-color: #E1EACB;
       padding: 0; }
       main .dropBox ul li {
         display: block;
         text-decoration: none;
         padding: 0.7em;
-        border: 1px solid blue; }
+        border: 1px solid #A7BFCB; }
         main .dropBox ul li a {
           display: block;
-          color: white;
+          color: #717E6C;
           text-decoration: none;
           font-size: 1.3em;
           text-align: center; }
+        main .dropBox ul li a:hover {
+          color: black;
+          font-weight: bold; }
   main #banner {
     padding-top: 1px;
-    background-color: grey; }
+    background-color: #A19E91;
+    border-left: 1em solid #A7BFCB;
+    border-right: 1em solid #A7BFCB; }
     main #banner img {
       display: block;
       height: 9em;
@@ -46,19 +51,36 @@ main {
       display: block;
       text-align: center;
       font-size: 3em;
-      color: white;
+      color: black;
       padding-bottom: 1em; }
   main #main, main #game, main #tumblr, main #chatroom {
-    background-color: black;
+    padding: 0 5px;
+    background-color: #A19E91;
     min-height: 32em;
-    color: white;
-    margin-top: -1.3em; }
+    color: black;
+    margin-top: -1.3em;
+    border-left: 1em solid #A7BFCB;
+    border-right: 1em solid #A7BFCB; }
     main #main span, main #game span, main #tumblr span, main #chatroom span {
       display: block;
       position: relative;
       top: 2em;
       left: 42%;
       font-size: 6em; }
+    main #main .siteTag, main #game .siteTag, main #tumblr .siteTag, main #chatroom .siteTag {
+      display: inline-block;
+      width: 25%;
+      margin-left: 15%;
+      text-align: center;
+      border-radius: 15px;
+      font-size: 1.25em;
+      background-color: #BAC6C8;
+      text-decoration: none;
+      color: black;
+      padding: 5px; }
+    main #main .siteTag:hover, main #game .siteTag:hover, main #tumblr .siteTag:hover, main #chatroom .siteTag:hover {
+      background-color: silver;
+      font-weight: bold; }
 
 @media screen and (min-width: 650px) {
   main nav .hamburger {
@@ -72,5 +94,8 @@ main {
       margin: 0 1em; }
       main nav .topNav li a {
         text-decoration: none;
-        color: grey;
-        font-size: 1.2em; } }
+        color: white;
+        font-size: 1.2em; }
+      main nav .topNav li a:hover {
+        color: black;
+        font-weight: bold; } }
