@@ -12719,9 +12719,10 @@ $hamburger.click(function (e) {
 	$('.dropBox').toggle('slow');
 });
 
-$('section').click(function (e) {
+$('#banner').click(function (e) {
 	e.preventDefault();
 	$('.dropBox').hide('slow');
+	console.log('son of a gun');
 });
 
 },{"backbone":1,"jquery":3}]},{},[4])
