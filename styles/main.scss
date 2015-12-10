@@ -12,7 +12,9 @@ main {
 			float: left;
 			height: 2em;
 			width: 2em;
+			border-radius: 5px;
 			background-color: #839C89;
+			background: #839C89 no-repeat center/80% url("https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png");
 		}
 
 		.topNav {
@@ -76,10 +78,11 @@ main {
 	}
 
 	#main, #game, #tumblr, #chatroom {
-		padding: 0 5px;
+		padding: 0 5px 1em 5px;
 		background-color: #A19E91;
 		min-height: 32em;
 		color: black;
+		margin-bottom: none;
 		margin-top: -1.3em;
 		border-left: 1em solid #A7BFCB;
 		border-right: 1em solid #A7BFCB;
@@ -108,6 +111,34 @@ main {
 		.siteTag:hover {
 			background-color: silver;
 			font-weight: bold;
+		}
+	}
+
+	footer {
+		background-color: #9194A1;
+		margin-top: -1em;
+		min-height: 5em;
+		padding-top: 1px;
+		padding-bottom: 1em;
+
+		#contactText {
+			text-align: center;
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+
+		#contactInfo {
+			margin-left: 14%;
+
+			img {
+				height: 15%;
+				width: 15%;
+				opacity: 0.8;
+			}
+
+			img:hover {
+				opacity: 1;
+			}
 		}
 	}
 }
@@ -141,5 +172,33 @@ main {
 				}
 			}
 		}
+
+		footer {
+		background-color: #9194A1;
+		margin-top: -1em;
+		min-height: 5em;
+		padding-top: 1px;
+		padding-bottom: 1em;
+
+		#contactText {
+			text-align: center;
+			font-size: 1.5em;
+			margin-top: 1em;
+		}
+
+		#contactInfo {
+			margin-left: 37%;
+
+			img {
+				height: 7%;
+				width: 7%;
+				opacity: 0.8;
+			}
+
+			img:hover {
+				opacity: 1;
+			}
+		}
+	}
 	}
 }
