@@ -11,7 +11,9 @@ main {
       float: left;
       height: 2em;
       width: 2em;
-      background-color: #839C89; }
+      border-radius: 5px;
+      background-color: #839C89;
+      background: #839C89 no-repeat center/80% url("https://openclipart.org/image/2400px/svg_to_png/221605/menu-icon.png"); }
     main nav .topNav {
       display: none; }
   main .dropBox {
@@ -54,10 +56,11 @@ main {
       color: black;
       padding-bottom: 1em; }
   main #main, main #game, main #tumblr, main #chatroom {
-    padding: 0 5px;
+    padding: 0 5px 1em 5px;
     background-color: #A19E91;
     min-height: 32em;
     color: black;
+    margin-bottom: none;
     margin-top: -1.3em;
     border-left: 1em solid #A7BFCB;
     border-right: 1em solid #A7BFCB; }
@@ -81,6 +84,24 @@ main {
     main #main .siteTag:hover, main #game .siteTag:hover, main #tumblr .siteTag:hover, main #chatroom .siteTag:hover {
       background-color: silver;
       font-weight: bold; }
+  main footer {
+    background-color: #9194A1;
+    margin-top: -1em;
+    min-height: 5em;
+    padding-top: 1px;
+    padding-bottom: 1em; }
+    main footer #contactText {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 1em; }
+    main footer #contactInfo {
+      margin-left: 14%; }
+      main footer #contactInfo img {
+        height: 15%;
+        width: 15%;
+        opacity: 0.8; }
+      main footer #contactInfo img:hover {
+        opacity: 1; }
 
 @media screen and (min-width: 650px) {
   main nav .hamburger {
@@ -98,4 +119,22 @@ main {
         font-size: 1.2em; }
       main nav .topNav li a:hover {
         color: black;
-        font-weight: bold; } }
+        font-weight: bold; }
+  main footer {
+    background-color: #9194A1;
+    margin-top: -1em;
+    min-height: 5em;
+    padding-top: 1px;
+    padding-bottom: 1em; }
+    main footer #contactText {
+      text-align: center;
+      font-size: 1.5em;
+      margin-top: 1em; }
+    main footer #contactInfo {
+      margin-left: 37%; }
+      main footer #contactInfo img {
+        height: 7%;
+        width: 7%;
+        opacity: 0.8; }
+      main footer #contactInfo img:hover {
+        opacity: 1; } }
