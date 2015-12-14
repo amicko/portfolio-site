@@ -3,6 +3,7 @@
 <head>
 	<title>Micko Portfolio Site</title>
 	<meta name="viewport" content="width=device-width">
+	<link href='https://fonts.googleapis.com/css?family=PT+Serif' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" type="text/css" href="./styles/main.sass.css">
 </head>
 <body>
@@ -10,38 +11,72 @@
 		<nav>
 			<button class="hamburger"></button>
 			<ul class="topNav">
-				<li><a href="#" target="_top">Home</a></li>
-				<li><a href="#game" target="_top">Game</a></li>
-				<li><a href="#tumblr" target="_top">Image Board</a></li>
-				<li><a href="#chatroom" target="_top">Chatroom</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#game">Game</a></li>
+				<li><a href="#tumblr">Image Board</a></li>
+				<li><a href="#chatroom">Chatroom</a></li>
+				<li><a href="#ironQuiz">Iron Quizzes</a></li>
 			</ul>
 		</nav>
 		<div class="dropBox">
 			<ul>
-				<li><a href="#" target="_top">Home</a></li>
-				<li><a href="#game" target="_top">Game</a></li>
-				<li><a href="#tumblr" target="_top">Image Board</a></li>
-				<li><a href="#chatroom" target="_top">Chatroom</a></li>
+				<li><a href="#">Home</a></li>
+				<li><a href="#game">Game</a></li>
+				<li><a href="#tumblr">Image Board</a></li>
+				<li><a href="#chatroom">Chatroom</a></li>
+				<li><a href="#ironQuiz">Iron Quizzes</a></li>
 			</ul>
 		</div>
 		<section id="banner">
 			<img src="https://scontent-dfw1-1.xx.fbcdn.net/hphotos-xfa1/v/t1.0-9/1005697_10151463864122532_866336051_n.jpg?oh=7c81579176cbd52e268d2d075e78dea6&oe=57175CB3">
 			<span id="title">Aaron's Site</span>
 		</section>
+		<section id="bannerGame">
+			<img class="arrow-left" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-go-previous-icon.png">
+			<div class="carousel">
+				<ul class="carouselList">
+					<li><img src="images/STCMDR_CarouselIMG1.jpg"></li>
+					<li><img src="images/STCMDR_CarouselIMG2.jpg"></li>
+					<li><img src="images/STCMDR_CarouselIMG3.jpg"></li>
+				</ul>
+			</div>
+			<img class="arrow-right" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-go-next-icon.png">
+		</section>
+		<section id="bannerTumblr">
+			<div class="demoIMG">
+				<img src="images/ImageBoard_IMG.jpg">
+			</div>
+		</section>
+		<section id="bannerChatroom">
+			<div class="demoIMG">
+				<img src="images/Chatroom_IMG.jpg">
+			</div>
+		</section>
+		<section id="bannerQuiz">
+			<img class="arrow-left" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-go-previous-icon.png">
+			<div class="carousel">
+				<ul class="carouselList">
+					<li><img src="images/ironQuizzes_carousel1.png"></li>
+					<li><img src="images/ironQuizzes_carousel2.png"></li>
+					<li><img src="images/ironQuizzes_carousel3.png"></li>
+				</ul>
+			</div>
+			<img class="arrow-right" src="http://icons.iconarchive.com/icons/oxygen-icons.org/oxygen/256/Actions-go-next-icon.png">
+		</section>
 		<section id="main">
-			<div>
+			<div class="card">
 				<h2>About Me</h2>
 				<p>Welcome! My name is Aaron Micko. I am a Front-End Engineer, recently graduated from the Iron Yard in Austin, Texas. Over the course, which lasted twelve weeks, we covered, in depth the following: 
 					<ul>
 						<li>HTML</li>
 						<li>CSS, with SASS</li>
-						<li>Vanilla JavaScript</li>
-						<li>jQuery</li>
-						<li>Backbone</li>
-						<li>React</li>
-						<li>Node</li>
+						<li>Frameworks/Libraries (React, Backbone, jQuery, Node)</li>
 						<li>Git/Github</li>
+						<li>Git Build Tools(Grunt, Gulp</li>
 						<li>Agile Development Methodology</li>
+						<li>MVC architectural methods</li>
+						<li>Responsive Design</li>
+						<li>Asynchronous programming</li>
 					</ul>
 				</p>
 				<p>The links provided will explain my process in building the related projects, along with the libraries and frameworks used.</p>
@@ -50,39 +85,75 @@
 		<section id="game">
 			<a class="siteTag" href="https://github.com/amicko/Star-Trek-Starship-Commander">Github Repo</a>
 			<a class="siteTag" href="http://amicko.github.io/Star-Trek-Starship-Commander">The Website</a>
-			<h2>The Game</h2>
-			<p>When I was a kid, my grandfather introduced me to a TV show called Star Trek. It's mission was simple, but powerful: To explore strange new worlds, to seek out new life and new civilizations. To boldly go where no one has gone before. Never before or since has something so perfectly captured the essence of my heart.</p>
-			<p>Star Trek is a TV show with action and science, but it is so much more than that. It is about discovering the world around you, and learning more about yourself. It is about always striving to be better than you were yesterday. That is what ultimately led me to programming.</p>
-			<p>In this field, I can make a better world and a better future one line of code at a time.</p>
-			<p>Star Trek: Starship Commander is a text-based browser game, where you will take the Captain's chair. You will command an upgradeable starship. You will lead a customizable staff of senior officers. You will explore those strange new worlds in a dynamic galaxy that changes as you level up. You will seek out new life and new civilizations in story-driven missions. You will boldly go where no one has gone before.</p>
-			<h2>The process</h2>
-			<p>I started by building out the wireframe, and writing out the datatables and their information. Following that, I built out the framework of the game, then did the basic styling. Once the their was something to look at and a working navigation system, I began the more complex queries that would create, display, and change the users' information. Finally, once the game mechanics worked together, i went back and added the more advanced styling.</p>
-			<h2>The libraries</h2>
-			<p>For this project, I used Backbone for the navigation, and React for everything else in the coding. For the back-end, I used Parse. For the styling, I used CSS with SASS.</p>
+			<div class="card">
+				<h2>The Game</h2>
+				<p>When I was a kid, my grandfather introduced me to a TV show called Star Trek. It's mission was simple, but powerful: To explore strange new worlds, to seek out new life and new civilizations. To boldly go where no one has gone before. Never before or since has something so perfectly captured the essence of my heart.</p>
+				<p>Star Trek is a TV show with action and science, but it is so much more than that. It is about discovering the world around you, and learning more about yourself. It is about always striving to be better than you were yesterday. That is what ultimately led me to programming.</p>
+				<p>In this field, I can make a better world and a better future one line of code at a time.</p>
+				<p>Star Trek: Starship Commander is a text-based browser game, where you will take the Captain's chair. You will command an upgradeable starship. You will lead a customizable staff of senior officers. You will explore those strange new worlds in a dynamic galaxy that changes as you level up. You will seek out new life and new civilizations in story-driven missions. You will boldly go where no one has gone before.</p>
+			</div>
+			<div class="card">
+				<h2>The process</h2>
+				<p>I started by building out the wireframe, and writing out the datatables and their information. Following that, I built out the framework of the game, then did the basic styling. Once the their was something to look at and a working navigation system, I began the more complex queries that would create, display, and change the users' information. Finally, once the game mechanics worked together, i went back and added the more advanced styling.</p>
+			</div>
+			<div class="card">
+				<h2>The libraries</h2>
+				<p>For this project, I used Backbone for the navigation, and React for everything else in the coding. For the back-end, I used Parse. For the styling, I used CSS with SASS.</p>
+			</div>
 		</section>
 		<section id="tumblr">
 			<a class="siteTag" href="https://github.com/amicko/jquery-image-board">Github Repo</a>
 			<a class="siteTag" href="http://amicko.github.io/jquery-image-board/">The Website</a>
-			<h2>The Image Board</h2>
-			<p>The idea of conveying images to others to share what makes me happy has always been appealing, even back in the days of yahoo messenger. Since the majority of people are visual learners, it is an excellent way to learn of others and to help others learn of you.</p>
-			<p>I decided that an image board site would be a great addition to my portfolio for just that reason, it will not only stand as an example of my ability but also as an opportunity to share my personal interests with you, in helping you to understand who I am.</p>
-			<h2>The process</h2>
-			<p>In my class, we originally did a version of this as homework using a heroku app. I went back and rebuilt the site with jQuery but connected the site to a Parse back-end server.</p>
-			<h2>The libraries</h2>
-			<p>For this project I used jQuery for the client side and Parse for the back-end.</p>
+			<div class="card">
+				<h2>The Image Board</h2>
+				<p>The idea of conveying images to others to share what makes me happy has always been appealing, even back in the days of yahoo messenger. Since the majority of people are visual learners, it is an excellent way to learn of others and to help others learn of you.</p>
+				<p>I decided that an image board site would be a great addition to my portfolio for just that reason, it will not only stand as an example of my ability but also as an opportunity to share my personal interests with you, in helping you to understand who I am.</p>
+			</div>
+			<div class="card">
+				<h2>The process</h2>
+				<p>In my class, we originally did a version of this as homework using a heroku app. I went back and rebuilt the site with jQuery but connected the site to a Parse back-end server.</p>
+			</div>
+			<div class="card">
+				<h2>The libraries</h2>
+				<p>For this project I used jQuery for the client side and Parse for the back-end.</p>
+			</div>
 		</section>
 		<section id="chatroom">
 			<a class="siteTag" href="https://github.com/amicko/jquery-chatroom">Github Repo</a>
 			<a class="siteTag" href="http://amicko.github.io/jquery-chatroom/">The Website</a>
-			<h2>The Chatroom</h2>
-			<p>When I was much younger, and still a relatively new fan to Star Trek, I stumbled upon a Star Trek chatroom. It was called Outpost 10 Forward, and was one of the preimminent scifi websites during the nineties and early 2000s. There, you could create an account in their Star Trek, Star Wars, or Lord of the Rings realms and chat with other like fans. the site was so famous, they regularly had celebrities coming online to role play as famous Scifi characters.</p>
-			<p>It also offered unique features on their site. Every user had a rank, which they could improve with active participation and good behavior. Each rank increased your access to the site with more basic html and css, access to the armory(a site feature in itself which gave you the ability to protect the site from those who would try to abuse it), and webpages only availabe to certain ranks. As you increased in rank, you were also promoted to better site positions and given teams of other users to lead in improving the site itself.</p>
-			<p>It was because of this site that my initial interest in programming started. When I saw other users putting in html and css and creating pictures, and different colors in their chat messages I wanted to do that too. I wanted to help the website by making improvements to the code. However, I didn't know how. So I began learning.</p>
-			<h2>The process</h2>
-			<p>I decided I wanted to recreate some of what I saw at the site, namely the chat feature itself. I did that to see if I could, after all that I learned, make the very site that drew me to programming all thos eyears ago.</p>
-			<p>I felt that jQuery offered the most versatile library to work with in what I wanted to do, and then added connections to a Parse server to store the messages themselves.</p>
-			<h2>The libraries</h2>
-			<p>For this project, I used jQuery for the client side, and for the back end I worked with Parse.com.</p>
+			<div class="card">
+				<h2>The Chatroom</h2>
+				<p>When I was much younger, and still a relatively new fan to Star Trek, I stumbled upon a Star Trek chatroom. It was called Outpost 10 Forward, and was one of the preimminent scifi websites during the nineties and early 2000s. There, you could create an account in their Star Trek, Star Wars, or Lord of the Rings realms and chat with other like fans. the site was so famous, they regularly had celebrities coming online to role play as famous Scifi characters.</p>
+				<p>It also offered unique features on their site. Every user had a rank, which they could improve with active participation and good behavior. Each rank increased your access to the site with more basic html and css, access to the armory(a site feature in itself which gave you the ability to protect the site from those who would try to abuse it), and webpages only availabe to certain ranks. As you increased in rank, you were also promoted to better site positions and given teams of other users to lead in improving the site itself.</p>
+				<p>It was because of this site that my initial interest in programming started. When I saw other users putting in html and css and creating pictures, and different colors in their chat messages I wanted to do that too. I wanted to help the website by making improvements to the code. However, I didn't know how. So I began learning.</p>
+			</div>
+			<div class="card">
+				<h2>The process</h2>
+				<p>I decided I wanted to recreate some of what I saw at the site, namely the chat feature itself. I did that to see if I could, after all that I learned, make the very site that drew me to programming all thos eyears ago.</p>
+				<p>I felt that jQuery offered the most versatile library to work with in what I wanted to do, and then added connections to a Parse server to store the messages themselves.</p>
+			</div>
+			<div class="card">
+				<h2>The libraries</h2>
+				<p>For this project, I used jQuery for the client side, and for the back end I worked with Parse.com.</p>
+			</div>
+		</section>
+		<section id="ironQuiz">
+			<a class="siteTag" href="https://github.com/TIY-Austin-Front-End-Engineering/Iron-Quizzes">Github Repo</a>
+			<a class="siteTag" href="http://tiy-austin-front-end-engineering.github.io/">The Website</a>
+			<div class="card">
+				<h2>Iron Quizzes</h2>
+				<p>"Iron Quizzes is a secure, professional web-based quiz service that is easy-to-use, for both students and Instructors. Instructors will be able to create quizzes, quick and easy, while also keeping track of the info you need. From analytics to student attendance, this will be the app you CANT LIVE WITHOUT."</p>
+				<p>Iron Quizzes is a website in which a user can create a profile to create quizzes which can then be given online to students, broken down by which class they are a part of. It allows teachers to keep track of attendance, grades, and skill aptitude.</p>
+			</div>
+			<div class="card">
+				<h2>The process</h2>
+				<p>This project was undertaken as a group in the class setting at Iron Yard. We followed the Agile methodology. First, we established the user stories, which were broken down in to associated code features by story. We then estimated the necessary time to complete each feature. Each student was paired and each pair then had the choice as to which feature they would begin working on, based on their skill level and amount of time required to complete the feature.</p>
+				<p>My partner and I decided to take an especially difficult and large feature, because we wanted the challenge and because the skills gained in finishing the feature would go a long way toward our final project work. In this case, the item we chose was the quiz completion screen, which queried the quiz results based on the student who had taken the quiz. The code also queried the quiz questions. It then compared the student's answers to the quiz correct answers and determined which answers were correct or incorrect, marking them as such for the student to follow. Finally, the code tallied the number of correct answers and provided a total score, which was then sent to the quiz analytics screen.</p>
+			</div>
+			<div class="card">
+				<h2>The libraries</h2>
+				<p>For this project, we used the React and Backbone libraries, SASS preprocessor, and Parse.com for our backend.</p>
+			</div>
 		</section>
 		<footer>
 			<div id="contactText">Contact Me</div>

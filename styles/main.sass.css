@@ -1,3 +1,9 @@
+body {
+  font-family: 'PT Serif', serif;
+  background: no-repeat center/150% url("http://www.freecreatives.com/wp-content/uploads/2015/04/natural-paper-background-texture-hd-5a0b.jpg");
+  background-size: cover;
+  margin: 0; }
+
 main {
   margin: -1em 0 0 0; }
   main nav {
@@ -6,7 +12,7 @@ main {
     main nav .hamburger {
       display: block;
       position: relative;
-      top: 1em;
+      top: 1.4em;
       left: 1em;
       float: left;
       height: 2em;
@@ -20,7 +26,8 @@ main {
     display: none;
     margin-top: -1em;
     position: absolute;
-    width: 50%; }
+    width: 50%;
+    z-index: 100; }
     main .dropBox ul {
       list-style-type: none;
       background-color: #E1EACB;
@@ -41,7 +48,7 @@ main {
           font-weight: bold; }
   main #banner {
     padding-top: 1px;
-    background-color: #A19E91;
+    /*background-color: #fff;*/
     border-left: 1em solid #A7BFCB;
     border-right: 1em solid #A7BFCB; }
     main #banner img {
@@ -55,22 +62,74 @@ main {
       font-size: 3em;
       color: black;
       padding-bottom: 1em; }
-  main #main, main #game, main #tumblr, main #chatroom {
+  main #bannerGame, main #bannerTumblr, main #bannerChatroom, main #bannerQuiz {
+    padding-top: 1px;
+    /*background-color: #fff;*/
+    border-left: 1em solid #A7BFCB;
+    border-right: 1em solid #A7BFCB;
+    padding-bottom: 1px;
+    box-sizing: border-box; }
+    main #bannerGame .arrow-left, main #bannerTumblr .arrow-left, main #bannerChatroom .arrow-left, main #bannerQuiz .arrow-left {
+      height: 2em;
+      float: left;
+      position: relative;
+      top: 6em;
+      z-index: 10;
+      opacity: 0.7; }
+    main #bannerGame .arrow-left:hover, main #bannerTumblr .arrow-left:hover, main #bannerChatroom .arrow-left:hover, main #bannerQuiz .arrow-left:hover {
+      opacity: 1; }
+    main #bannerGame .arrow-right, main #bannerTumblr .arrow-right, main #bannerChatroom .arrow-right, main #bannerQuiz .arrow-right {
+      height: 2em;
+      float: right;
+      position: relative;
+      top: -8em;
+      z-index: 10;
+      opacity: 0.7; }
+    main #bannerGame .arrow-right:hover, main #bannerTumblr .arrow-right:hover, main #bannerChatroom .arrow-right:hover, main #bannerQuiz .arrow-right:hover {
+      opacity: 1; }
+    main #bannerGame .carousel, main #bannerTumblr .carousel, main #bannerChatroom .carousel, main #bannerQuiz .carousel {
+      margin: 2em auto;
+      position: relative;
+      width: 20em;
+      overflow: hidden; }
+      main #bannerGame .carousel .carouselList, main #bannerTumblr .carousel .carouselList, main #bannerChatroom .carousel .carouselList, main #bannerQuiz .carousel .carouselList {
+        width: 1920px;
+        overflow: hidden;
+        clear: both;
+        padding: 0;
+        margin: 0; }
+        main #bannerGame .carousel .carouselList li, main #bannerTumblr .carousel .carouselList li, main #bannerChatroom .carousel .carouselList li, main #bannerQuiz .carousel .carouselList li {
+          min-width: 10em;
+          width: 20em;
+          text-align: center;
+          list-style: none;
+          float: left; }
+          main #bannerGame .carousel .carouselList li img, main #bannerTumblr .carousel .carouselList li img, main #bannerChatroom .carousel .carouselList li img, main #bannerQuiz .carousel .carouselList li img {
+            width: 100%; }
+    main #bannerGame .demoIMG, main #bannerTumblr .demoIMG, main #bannerChatroom .demoIMG, main #bannerQuiz .demoIMG {
+      margin: 2em auto;
+      height: 13em; }
+      main #bannerGame .demoIMG img, main #bannerTumblr .demoIMG img, main #bannerChatroom .demoIMG img, main #bannerQuiz .demoIMG img {
+        width: 85%;
+        padding-top: 1.5em;
+        padding-left: 10%;
+        max-width: 23em; }
+  main #main, main #game, main #tumblr, main #chatroom, main #ironQuiz {
     padding: 0 5px 1em 5px;
-    background-color: #A19E91;
+    /*background-color: #fff;*/
     min-height: 32em;
     color: black;
     margin-bottom: none;
     margin-top: -1.3em;
     border-left: 1em solid #A7BFCB;
     border-right: 1em solid #A7BFCB; }
-    main #main span, main #game span, main #tumblr span, main #chatroom span {
+    main #main span, main #game span, main #tumblr span, main #chatroom span, main #ironQuiz span {
       display: block;
       position: relative;
       top: 2em;
       left: 42%;
       font-size: 6em; }
-    main #main .siteTag, main #game .siteTag, main #tumblr .siteTag, main #chatroom .siteTag {
+    main #main .siteTag, main #game .siteTag, main #tumblr .siteTag, main #chatroom .siteTag, main #ironQuiz .siteTag {
       display: inline-block;
       width: 25%;
       margin-left: 15%;
@@ -81,9 +140,15 @@ main {
       text-decoration: none;
       color: black;
       padding: 5px; }
-    main #main .siteTag:hover, main #game .siteTag:hover, main #tumblr .siteTag:hover, main #chatroom .siteTag:hover {
+    main #main .siteTag:hover, main #game .siteTag:hover, main #tumblr .siteTag:hover, main #chatroom .siteTag:hover, main #ironQuiz .siteTag:hover {
       background-color: silver;
       font-weight: bold; }
+    main #main .card, main #game .card, main #tumblr .card, main #chatroom .card, main #ironQuiz .card {
+      width: 98%;
+      background-color: #A19E91;
+      box-shadow: 5px 5px rgba(0, 0, 0, 0.7);
+      padding: 0.3em;
+      margin: 1em auto; }
   main footer {
     background-color: #9194A1;
     margin-top: -1em;
@@ -120,6 +185,56 @@ main {
       main nav .topNav li a:hover {
         color: black;
         font-weight: bold; }
+  main #bannerGame, main #bannerTumblr, main #bannerChatroom, main #bannerQuiz {
+    padding-top: 1px;
+    border-left: 1em solid #A7BFCB;
+    border-right: 1em solid #A7BFCB;
+    padding-bottom: 1px; }
+    main #bannerGame .arrow-left, main #bannerTumblr .arrow-left, main #bannerChatroom .arrow-left, main #bannerQuiz .arrow-left {
+      height: 2em;
+      float: left;
+      position: relative;
+      top: 6em;
+      left: 30%;
+      z-index: 10; }
+    main #bannerGame .arrow-right, main #bannerTumblr .arrow-right, main #bannerChatroom .arrow-right, main #bannerQuiz .arrow-right {
+      height: 2em;
+      float: right;
+      position: relative;
+      top: -8em;
+      right: 30%;
+      z-index: 10; }
+    main #bannerGame .carousel, main #bannerTumblr .carousel, main #bannerChatroom .carousel, main #bannerQuiz .carousel {
+      /*margin: 2em auto;
+				position: relative;
+				width: 20em;
+				overflow: hidden;*/ }
+      main #bannerGame .carousel .carouselList, main #bannerTumblr .carousel .carouselList, main #bannerChatroom .carousel .carouselList, main #bannerQuiz .carousel .carouselList {
+        /*width: 1920px;
+					overflow: hidden;
+					clear: both;
+					padding: 0;
+					margin: 0;*/ }
+        main #bannerGame .carousel .carouselList li, main #bannerTumblr .carousel .carouselList li, main #bannerChatroom .carousel .carouselList li, main #bannerQuiz .carousel .carouselList li {
+          /*min-width: 10em;
+						width: 20em;
+						text-align: center;
+						list-style: none;
+						float:	left;*/ }
+          main #bannerGame .carousel .carouselList li img, main #bannerTumblr .carousel .carouselList li img, main #bannerChatroom .carousel .carouselList li img, main #bannerQuiz .carousel .carouselList li img {
+            /*width: 100%;*/ }
+    main #bannerGame .demoIMG, main #bannerTumblr .demoIMG, main #bannerChatroom .demoIMG, main #bannerQuiz .demoIMG {
+      height: 15em; }
+      main #bannerGame .demoIMG img, main #bannerTumblr .demoIMG img, main #bannerChatroom .demoIMG img, main #bannerQuiz .demoIMG img {
+        margin-top: -1em;
+        padding-left: 0;
+        position: absolute;
+        top: 7em;
+        left: 31%;
+        width: 40%;
+        min-width: 20em;
+        max-width: 30em;
+        max-height: 11em; }
   main footer {
     background-color: #9194A1;
     margin-top: -1em;
