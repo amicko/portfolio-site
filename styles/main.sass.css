@@ -110,7 +110,7 @@ main {
       margin: 2em auto;
       height: 13em; }
       main #bannerGame .demoIMG img, main #bannerTumblr .demoIMG img, main #bannerChatroom .demoIMG img, main #bannerQuiz .demoIMG img {
-        width: 85%;
+        width: 80%;
         padding-top: 1.5em;
         padding-left: 10%;
         max-width: 23em; }
@@ -231,7 +231,7 @@ main {
         position: absolute;
         top: 7em;
         left: 31%;
-        width: 40%;
+        width: 35%;
         min-width: 20em;
         max-width: 30em;
         max-height: 11em; }
