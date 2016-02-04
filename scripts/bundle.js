@@ -12669,7 +12669,7 @@ $(document).ready(function () {
 		routes: {
 			'': 'home',
 			'game': 'game',
-			'tumblr': 'tumblr',
+			'socialNetwork': 'socialNetwork',
 			'chatroom': 'chatroom',
 			'ironQuiz': 'ironQuiz'
 		},
@@ -12691,7 +12691,7 @@ $(document).ready(function () {
 				$('.dropBox').toggle('slow');
 			}
 		},
-		tumblr: function tumblr() {
+		socialNetwork: function socialNetwork() {
 			$('nav').show();
 			$('section').hide();
 			$('#bannerTumblr').show();

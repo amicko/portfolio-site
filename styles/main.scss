@@ -36,6 +36,9 @@ main {
 		position: absolute;
 		width: 50%;
 		z-index: 100;
+		animation-name: dropBox;
+		animation-duration: 2s;
+
 
 		ul {
 			list-style-type: none;
@@ -62,6 +65,18 @@ main {
 				}
 			}
 		}
+	}
+
+	@keyframes dropBox {
+		from {
+			margin-top: -1em;
+			height: 0;
+			width: 50%;
+		}
+
+		to {
+			height: 30em;
+	 	}
 	}
 
 	#banner {

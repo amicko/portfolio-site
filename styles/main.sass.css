@@ -27,7 +27,9 @@ main {
     margin-top: -1em;
     position: absolute;
     width: 50%;
-    z-index: 100; }
+    z-index: 100;
+    animation-name: dropBox;
+    animation-duration: 2s; }
     main .dropBox ul {
       list-style-type: none;
       background-color: #E1EACB;
@@ -46,6 +48,14 @@ main {
         main .dropBox ul li a:hover {
           color: black;
           font-weight: bold; }
+
+@keyframes dropBox {
+  from {
+    margin-top: -1em;
+    height: 0;
+    width: 50%; }
+  to {
+    height: 30em; } }
   main #banner {
     padding-top: 1px;
     /*background-color: #fff;*/
